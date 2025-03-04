@@ -1,0 +1,229 @@
+/* Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1c1c1c;
+  padding: 15px 20px;
+}
+
+.navbar button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.navbar button:hover {
+  background: #0056b3;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 60px;
+  width: 60px;
+  background: #1c1c1c;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar.expanded {
+  width: 200px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.sidebar-item span {
+  display: none;
+  font-size: 16px;
+}
+
+.sidebar.expanded .sidebar-item span {
+  display: inline;
+}
+
+/* Main Content */
+.container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+}
+
+.card {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.button-disabled {
+  background: gray;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: not-allowed;
+  border-radius: 5px;
+}
+
+/* Warning Message */
+.warning {
+  color: red;
+  font-size: 14px;
+}
+
+/* Audio Player */
+.audio-player {
+  background: #1c1c1c;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Menu Button */
+.menu-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+/* Upload Section */
+.upload-container {
+  margin: 20px auto;
+  padding: 20px;
+  background: #222;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+}
+
+.upload-container input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  background: #1c1c1c;
+  border: 1px solid gray;
+  color: white;
+  border-radius: 5px;
+}
+
+.upload-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.upload-button:hover {
+  background: #0056b3;
+}
+/* Center the Search Container */
+.search-container {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background: #222;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Style the Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+/* Input Field */
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  background: #1c1c1c;
+  border: 1px solid gray;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Search Button */
+.search-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.search-button:hover {
+  background: #0056b3;
+}
+
+/* Search Results */
+.search-results {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+.user-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Center content horizontally */
+  justify-content: center;  /* Center content vertically */
+  height: 100vh;  /* Make it take full screen height */
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin: auto; /* Center horizontally */
+  padding: 20px;
+}
+
+.user-details-container h2 {
+  color: #333;
+}
+
+.user-details-container p {
+  font-size: 18px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.wallet-address {
+  font-weight: bold;
+  color: #007bff; /* Blue color for wallet */
+  word-break: break-all; /* Ensure long addresses wrap properly */
+}
